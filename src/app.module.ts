@@ -5,6 +5,7 @@ import { AuthModule } from './auth/auth.module';
 import { FirebaseModule } from './firebase/firebase.module';
 import { UsersModule } from './users/users.module';
 import { RolesModule } from './roles/roles.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -15,5 +16,6 @@ import { RolesModule } from './roles/roles.module';
     RolesModule,
   ],
   providers: [AppService],
+  controllers: [AppController],
 })
-export class AppModule {}
+export class AppModule { }
